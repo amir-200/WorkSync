@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+    <!-- Your Work Section -->
+    <div class="card">
+        <h2>Your Work</h2>
+        <div class="circular-progress">
+            <span>50%</span>
+        </div>
+        <p>Pending: 25</p>
+        <p>Completed: 25</p>
+    </div>
+    <!-- Assign Task Section -->
+    <div class="card">
+        <h2>Assign Task</h2>
+        <div class="assign-task">
+            <select>
+                <option>Ayan Shaikh</option>
+                <option>Affan Shaikh</option>
+                <option>Amir Shaikh</option>
+                <option>Mohammad Anas
+                </option>
+            </select>
+            <input type="text" placeholder="Task...">
+            <button>Assign</button>
+        </div>
+    </div>
+
+    <!-- Project Progress Section -->
+    <div class="card">
+        <h2>Project Progress</h2>
+        <div class="progress-bar">
+            <div style="width: 40%;"></div>
+        </div>
+        <p>Completed: 40%</p>
+        <p>To-Do: 40%</p>
+        <p>Pending: 40%</p>
+    </div>
+
+    <!-- Work to Submit Section -->
+    <div class="card">
+        <h2>Work to Submit</h2>
+        <div class="progress-bar">
+            <div style="width: 70%;"></div>
+        </div>
+    </div>
+
+    <!-- Progressive Tracking Section -->
+    <div class="card">
+        <h2>Progressive Tracking</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Assign Date / Deadline</th>
+                    <th>Pending/Done</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ayan Shaikh</td>
+                    <td>17-12-2024 / 18-12-2024</td>
+                    <td>25/25</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Affan Shaikh</td>
+                    <td>17-12-2024 / 18-12-2024</td>
+                    <td>25/25</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mohammad Anas</td>
+                    <td>17-12-2024 / 18-12-2024</td>
+                    <td>25/25</td>
+                    <td>50</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Todo Task Section -->
+    <div class="card">
+        <h2>Todo Task</h2>
+        <ul class="task-list">
+            <li class="task">
+                <span class="deadline">Deadline: 17-12-2024</span>
+                <span class="status">Done</span>
+            </li>
+            <li class="task">
+                <span class="deadline">Deadline: 17-12-2024</span>
+                <span class="status">Done</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+<div class="card">
+    <h2>Work to Submit</h2>
+    <div class="weekly-chart">
+        <div class="day-progress">
+            <div class="bar" style="height: 70%;"></div>
+            <div class="day-label">MON</div>
+        </div>
+        <div class="day-progress">
+            <div class="bar" style="height: 60%;"></div>
+            <div class="day-label">TUE</div>
+        </div>
+        <div class="day-progress">
+            <div class="bar" style="height: 80%;"></div>
+            <div class="day-label">WED</div>
+        </div>
+        <div class="day-progress">
+            <div class="bar" style="height: 50%;"></div>
+            <div class="day-label">THU</div>
+        </div>
+        <div class="day-progress">
+            <div class="bar" style="height: 90%;"></div>
+            <div class="day-label">FRI</div>
+        </div>
+        <div class="day-progress">
+            <div class="bar" style="height: 40%;"></div>
+            <div class="day-label">SAT</div>
+        </div>
+        <div class="day-progress">
+            <div class="bar" style="height: 30%;"></div>
+            <div class="day-label">SUN</div>
+        </div>
+    </div>
+</div>

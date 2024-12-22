@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    width: 80px;
+    background-color: #6c5ce7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.nav-top {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-item {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-item.active {
+    background-color: #6c5ce7;
+    color: white;
+}
+
+.nav-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.add-button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-button .material-icons {
+    color: #6c5ce7;
+}
+
+/* Chat Area */
+.chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+.chat-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.message-group {
+    margin-bottom: 20px;
+}
+
+.user {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.message-bubble {
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 5px;
+    max-width: 70%;
+}
+
+.message-bubble.primary {
+    background-color: #6c5ce7;
+    color: white;
+}
+
+.message-bubble.secondary {
+    background-color: #f0f0f0;
+    color: black;
+    margin-left: 50px;
+}
+
+.date-divider {
+    text-align: center;
+    color: #666;
+    margin: 20px 0;
+    position: relative;
+}
+
+.date-divider::before,
+.date-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.date-divider::before {
+    left: 0;
+}
+
+.date-divider::after {
+    right: 0;
+}
+
+.chat-input {
+    padding: 20px;
+    background-color: white;
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+}
+
+.input-actions {
+    display: flex;
+    gap: 15px;
+    color: #666;
+}
+
+.material-icons {
+    cursor: pointer;
+}
+
+/* Add these new styles for the project section */
+.project-section {
+    width: 280px;
+    background-color: #fff;
+    border-right: 1px solid #eee;
+    padding: 20px;
+}
+
+.project-header {
+    margin-bottom: 20px;
+}
+
+.project-header h2 {
+    margin-bottom: 15px;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px 35px 8px 15px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.search-bar .material-icons {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 20px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-item {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-item.active {
+    background-color: #6c5ce7;
+    color: white;
+}
+
+.badge {
+    background-color: white;
+    color: #6c5ce7;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+/* Update message styles to include avatar */
+.user-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.message-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.username {
+    font-weight: 500;
+    font-size: 14px;
+}

@@ -1,0 +1,37 @@
+ <div class="card">
+        <h2>Progressive Tracking</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Assign Date / Deadline</th>
+                    <th>Pending/Done</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ayan Shaikh</td>
+                    <td>17-12-2024 / 18-12-2024</td>
+                    <td>25/25</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Affan Shaikh</td>
+                    <td>17-12-2024 / 18-12-2024</td>
+                    <td>25/25</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mohammad Anas</td>
+                    <td>17-12-2024 / 18-12-2024</td>
+                    <td>25/25</td>
+                    <td>50</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Navigation Bar -->
+        <nav class="nav-bar">
+            <div class="nav-top">
+                <div class="nav-item profile">
+                    <img src="profile-image.jpg" alt="Profile">
+                </div>
+                <div class="nav-item">
+                    <span class="material-icons">chat</span>
+                </div>
+                <div class="nav-item">
+                    <span class="material-icons">grid_view</span>
+                </div>
+                <div class="nav-item">
+                    <span class="material-icons">insert_chart</span>
+                </div>
+                <div class="nav-item">
+                    <span class="material-icons">dashboard</span>
+                </div>
+            </div>
+            <div class="nav-bottom">
+                <button class="add-button">
+                    <span class="material-icons">add</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Project Section -->
+        <div class="project-section">
+            <div class="project-header">
+                <h2>Project</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="search">
+                    <span class="material-icons">search</span>
+                </div>
+            </div>
+            <div class="project-list">
+                <div class="project-item active">
+                    <span>#vijit project</span>
+                    <span class="badge">ID</span>
+                </div>
+                <div class="project-item">#ratina CNN</div>
+                <div class="project-item">#Mhssp project</div>
+            </div>
+        </div>
+
+        <!-- Chat Area -->
+        <main class="chat-area">
+            <header class="chat-header">
+                <h1>vijit project</h1>
+                <div class="header-icons">
+                    <span class="material-icons">group_add</span>
+                    <span class="material-icons">videocam</span>
+                </div>
+            </header>
+
+            <div class="chat-messages">
+                <div class="message-group">
+                    <div class="user-message">
+                        <img src="user-avatar.jpg" alt="Ayan" class="user-avatar">
+                        <div class="message-content">
+                            <span class="username">Ayan shaikh</span>
+                            <span class="message-bubble primary">Hi</span>
+                        </div>
+                    </div>
+                    <div class="message-bubble secondary">Hi</div>
+                    <div class="message-bubble secondary">bhai kaisa hai ?</div>
+                </div>
+
+                <div class="date-divider">17 dec 2024</div>
+
+                <div class="message-group">
+                    <div class="user-message">
+                        <img src="user-avatar.jpg" alt="Ayan" class="user-avatar">
+                        <div class="message-content">
+                            <span class="username">Ayan shaikh</span>
+                            <span class="message-bubble primary">acha hu !</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <input type="text" placeholder="New message...">
+                <div class="input-actions">
+                    <span class="material-icons">attach_file</span>
+                    <span class="material-icons">send</span>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

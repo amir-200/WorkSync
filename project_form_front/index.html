@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="back-btn">←</button>
+            <h1>Create Project</h1>
+        </div>
+
+        <form id="projectForm">
+            <div class="form-group">
+                <label>Project name</label>
+                <input type="text" class="input-field" placeholder="Enter name..." required>
+            </div>
+
+            <div class="form-group">
+                <label>Select members</label>
+                <div class="members-section">
+                    <div class="members-list" id="availableMembers">
+                        <!-- Members list will be rendered here -->
+                    </div>
+                    <div class="email-input-section">
+                        <input type="email" class="input-field" placeholder="Gmail..." id="emailInput">
+                        <button type="button" class="add-btn">ADD</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Description</label>
+                <textarea class="input-field" placeholder="type..."></textarea>
+            </div>
+
+            <div class="form-group deadline-group">
+                <label>Deadline</label>
+                <input type="date" class="input-field date-input" placeholder="DD-MM-YYYY">
+            </div>
+
+            <button type="submit" class="create-btn">Create</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

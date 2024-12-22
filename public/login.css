@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", serif;
+}
+
+/* General body styling */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4fa;
+  position: relative;
+  overflow: hidden;
+
+}
+
+/* Background blurred circle */
+.background-circle {
+  width: 40vw;
+  height: 40vw;
+  background: #90a9fa;
+  filter: blur(30px);
+  position: absolute;
+  top: -15%;
+  right: -3%;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.login-form{
+  width: 30%;
+  padding: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  position: relative;
+  background-color: rgba(199, 199, 199, 0.329);
+  backdrop-filter: blur(15px);
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+#logintext{
+  margin: auto;
+  color: #393939;
+  font-size: 4vw;
+}
+
+/* Card container */
+.card {
+  width: 350px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+  color: transparent;
+  backdrop-filter: blur;
+}
+
+/* Title */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Form heading */
+.login-form h2 {
+  margin: 10px 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Form inputs */
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #fae7e7;
+  border-radius: 15px;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+
+/* Gender options */
+.gender {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.gender label {
+  font-size: 14px;
+}
+
+/* Buttons */
+.upload-btn,
+.submit-btn,
+.google-login {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.upload-btn {
+  background: #4285f4;
+  width: 20%;
+  color: white;
+  margin-left: 40px;
+  border-radius: 200px;
+  border: 1px solid black;
+}
+
+.submit-btn {
+  background: black;
+  color: white;
+  width: 30%;
+  margin-top: 5%;
+  border-radius: 600px;
+  
+}
+
+.google-login {
+  background: #4285f4;
+  color: white;
+}
+
+h1{
+  margin-top: 2px;
+}
+
+#name{
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  border-bottom: 2px solid black;
+  font-size: 1vw;
+}
+
+#email{
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  border-bottom: 2px solid black;
+  font-size: 1vw;
+}
+
+#password{
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  border-bottom: 2px solid black;
+  font-size: 1vw;
+}
+
+#Birthdate{
+  width: 20%;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  border-bottom: 2px solid black;
+  font-size: 1vw;
+  color: rgb(85, 85, 85);
+}
+
+.gender {
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  background-color: transparent;
+  max-width: 400px;
+  border-bottom: 2px solid black;
+  
+}
+
+/* Style the legend */
+.gender fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gender legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style the labels */
+.gender label {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Style the radio buttons */
+.gender input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #007bff; /* Custom color for the radio button */
+}
+
+.title{
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  font-size: 4vw;
+  color: #393939;
+}
+
+.upload-btn {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 3px 5px;
+  border: 2px solid black;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  border-radius: 200px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.upload-btn::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.upload-btn::before {
+  content: 'Upload CV';
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 200px;
+  cursor: pointer;
+}

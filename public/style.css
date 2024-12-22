@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+
+*{
+    font-family: "Poppins", system-ui;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #161616;
+    color: #E2E2B6;
+    background-image: url('World\ Map\ \(1\).svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1{
+    position: absolute;
+    top: 5%;
+    font-size: clamp(50px, 10vw, 100px);
+    color: #caca9f;
+}
+
+.form-group{
+    position: relative;
+    margin: 15px;
+    /* width: clamp(50px, 5vw, 300px); */
+    /* transform: translate(-200%, -50%); */
+}
+.form-group input{
+    height: 30px;
+    width: clamp(200px, 30vw, 300px);
+    border-radius: 30px;
+    border: 2px solid rgb(81, 81, 224);
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #eeeede;
+    font-size: medium;
+    color: #161616;
+    font-weight: 500;
+}
+
+.form-group label{
+    font-weight: 500;
+}
+
+#contact-form{
+    background-color: rgba(255, 0, 0, 0);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    color: rgb(113, 113, 204);
+}
+
+button{
+    font-size: larger;
+    font-weight: 600;
+    margin: 30px;
+    padding: 5px;
+    color: #E2E2B6;
+    border-radius: 20px;
+    background-color: rgb(109, 107, 107);
+    width: clamp(50px, 30vw, 800px);;
+    /* border: 3px solid rgb(81, 81, 224); */
+    transition: all linear 0.5s;
+}
+
+button:hover{
+    background-color: #E2E2B6;
+    color: rgb(109, 107, 107);
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.error{
+    color: red;
+    font-size: 0.7rem;
+    text-align: right;
+    margin: 1rem;
+}

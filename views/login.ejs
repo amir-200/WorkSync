@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="title">WORKSYNC</h1>
+
+        <form id="contact-form" method="post" action="/login" class="login-form">
+            <h1 id="logintext">login</h1>
+
+        
+            <div class="form-group">
+                <input type="text" placeholder="Name" id="name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" id="email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" id="password" required> 
+                <p class="error"> <%= locals.massage %> </p>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <div class="background-circle "></div>
+    </div>
+
+</body>
+</html>

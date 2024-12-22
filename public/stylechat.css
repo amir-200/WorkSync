@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #868686;
+    overflow: hidden;
+    padding: 2vw;
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+#circle{
+    width: clamp(150px, 15vw, 500px);
+    height: clamp(150px, 15vw, 500px);
+    border-radius: 50%;
+    background-color: rgb(87, 87, 226);
+    filter: blur(3px);
+    position: absolute;
+}
+
+#profile{
+    width:  clamp(300px, 30vw, 800px);
+    height:  clamp(150px, 15vh, 400px);
+    background-color: rgba(255, 255, 255, 0.103);
+    backdrop-filter: blur(10px);
+    position: relative;
+    font-size:clamp(20px, 1vw, 100px);
+    z-index: 2;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#profile #uuid{
+    color: rgb(170, 176, 230);
+    font-family: "Poppins";
+    margin: 20px;
+    font-style: 5px;
+    font-weight: bolder;
+}
+
+#profile #uuid span{
+    color: rgb(212, 105, 66);
+}
+
+#acount{
+    width:  clamp(300px, 30vw, 800px);
+    height:  clamp(150px, 73vh, 1000px);
+    background-color: rgba(255, 255, 255, 0.103);
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 2;
+    border-radius: 30px;
+    /* padding: 20px; */
+    overflow: hidden;
+}
+
+#acount ::-webkit-scrollbar{
+    display: none;
+}
+
+/* General layout styles */
+#left {
+    width: clamp(300px, 30vw, 800px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Hidden by default */
+#menu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    /* Menu button initial state */
+    #left {
+        display: flex;
+        position: absolute;
+        z-index: 5;
+        width: 50px;
+        height: 50px;
+        background-color: #5250c9dc;
+        color: white;
+        border-radius: 50%;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        /* border: 2px solid red; */
+    }
+
+    /* Menu button styles */
+    #menu {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid rgb(117, 82, 245);
+        font-family: "Poppins";
+        font-weight: 600;
+        background-color: rgb(166, 166, 248);
+        text-align: center;
+        line-height: 40px;
+    }
+
+    /* Initially hide #profile and #acount */
+    #profile, #acount {
+        display: none;
+    }
+
+    /* Change button to a cross when menu is active */
+    #menu.active {
+        content: "✕";
+        background-color: #ff5252;
+        width: 50px;
+        height: 50px;
+        line-height: 40px;
+    }
+
+    /* Profile and Account visible when active */
+    #profile.active, #acount.active {
+        display: block;
+    }
+
+    /* Full screen layout for mobile */
+    #left.active {
+        width: 95vw;
+        height: 95vh;
+    }
+
+    /* Chatbox takes full width */
+    #chatbox {
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+    }
+
+    #input button{
+        background-size:50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("send.png");
+    }
+
+    #input button span {
+        display: none;                   
+    }
+}
+
+#chatbox{
+    width:  clamp(300px, 80vw, 3000px);
+    height:  90vh;
+    background-color: rgba(255, 255, 255, 0.103);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    border-radius: 30px;
+    padding: 20px;
+    color: white;
+    font-family: "Poppins";
+    overflow: scroll;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#chatbox::-webkit-scrollbar{
+    display: none;
+}
+
+.reply{
+    background-color: rgb(135, 135, 228);
+    padding: 8px;
+    width: fit-content;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.response{
+    background-color: rgb(59, 59, 138);
+    padding: 8px;
+    width: fit-content;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 900px){
+    #profile{
+        width: 98%;
+    }
+}
+
+.user{
+    font-family: "Poppins";
+    color: #1f1f1f;
+    background-color: #8f91d3;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 50px;
+}
+
+.user span{
+    color: rgb(82, 55, 45);
+    font-weight: bold;
+}
+
+#display_username{
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+
+    align-items: center;
+    background-color: rgba(212, 131, 84, 0);
+    width: fit-content;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    padding: 20px;
+    border-radius: 30px;
+    flex-direction: column;
+    z-index: 4;
+}
+
+#display_username #txt {
+    font-size: small;
+    color: rgb(212, 105, 66);
+    font-weight: 500;
+}
+
+#message{
+    width: 90%;
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 10px;
+    font-size: large;
+    font-family: "Poppins";
+    font-weight: 500;
+    background-color: rgb(216, 216, 216);
+    border: 3px solid rgb(118, 98, 235);
+}
+
+#input{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#input button{
+    width: clamp(50px, 7%, 700px);
+    height: 50px;
+    border-radius: 30px;
+    font-size: large;
+    font-family: "Poppins";
+    font-weight: bold;
+    background-color: rgb(116, 116, 226);
+    border:  3px solid rgb(118, 98, 235);
+}
