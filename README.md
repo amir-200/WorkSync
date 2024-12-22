@@ -26,7 +26,7 @@ WorkSync is a web-based platform designed to revolutionize remote work by addres
 
 
 ## PPT
-[PPT hosted here](https://uppermoonobjectclassification.my.canva.site/)
+[PPT hosted here](https://bluetoorh-voice-control-car.my.canva.site/worksync)
 
 ## 🌐 Overveiw
 With the rise of remote work, maintaining effective communication, managing workflows, and fostering team cohesion have become major challenges for teams worldwide. WorkSync addresses these challenges by providing an all-in-one platform designed to make remote collaboration effortless and productive.
@@ -56,41 +56,32 @@ By minimizing tool-switching fatigue and fostering a collaborative environment, 
 Here are some snapshots of the **WorkSync** platform's exceptional UI and it's userflow:
 
 ### Uerflow  
-![Dashboard](path/to/dashboard-image.png)  
-*An intuitive dashboard for organizing projects and communication seamlessly.*  
+![Userflow](Image/Flow_chart.jpeg)  
+*Streamlined navigation ensuring a seamless experience from onboarding to daily use.*  
 
 ### Landing Page  
-![Dashboard](path/to/dashboard-image.png)  
-*An intuitive dashboard for organizing projects and communication seamlessly.*  
+![Landing Page](Image/Landing_Page.jpeg)  
+*Secure and user-friendly login interface for quick access to your workspace.*  
 
 ### Login Page  
-![Task Management](path/to/task-management-image.png)  
-*Efficiently manage tasks, deadlines, and progress in a streamlined interface.*  
+![Login Page](Image/Login_Page.jpeg)  
+*Secure and user-friendly login interface for quick access to your workspace.*  
 
 ### Registration Page  
-![Task Management](path/to/task-management-image.png)  
+![Registration Page](Image/Registration.jpeg)  
 *Efficiently manage tasks, deadlines, and progress in a streamlined interface.*
 
 ### Upload Page  
-![Task Management](path/to/task-management-image.png)  
-*Efficiently manage tasks, deadlines, and progress in a streamlined interface.*
-
-### Personal Chat  
-![Task Management](path/to/task-management-image.png)  
-*Efficiently manage tasks, deadlines, and progress in a streamlined interface.*
-
-### Group Chat  
-![Task Management](path/to/task-management-image.png)  
-*Efficiently manage tasks, deadlines, and progress in a streamlined interface.*
+![Upload Page](Image/Upload.jpeg)  
+*Easily upload files and documents to share with your team in real time.*
 
 ### Dashboard  
-![Task Management](path/to/task-management-image.png)  
-*Efficiently manage tasks, deadlines, and progress in a streamlined interface.*
+![Dashboard](Image/Dashboard.jpeg)  
+*An intuitive hub for tracking projects, tasks, and communication in one place.*
 
 ### Screen Sharing  
-![Document Editing](path/to/document-editing-image.png)  
+[![Showcasing the screen sharing here]](https://youtu.be/yeKvhTcaanU?si=0gjmv7mHOTaivX7-)  
 *Collaborate on documents in real time with live updates.*  
-
 
 ## 🛠️ Installation  
 
@@ -116,3 +107,7 @@ Here are some snapshots of the **WorkSync** platform's exceptional UI and it's u
    ```
 
 ---
+## Demo
+
+Insert gif or link to demo
+
