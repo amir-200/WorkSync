@@ -56,7 +56,7 @@ By minimizing tool-switching fatigue and fostering a collaborative environment, 
 Here are some snapshots of the **WorkSync** platform's exceptional UI and it's userflow:
 
 ### Uerflow  
-![Userflow](Image/Flow_chart.jpeg)  
+![Userflow](Image/Flow_Chart.jpeg)  
 *Streamlined navigation ensuring a seamless experience from onboarding to daily use.*  
 
 ### Landing Page  
