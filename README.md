@@ -56,27 +56,27 @@ By minimizing tool-switching fatigue and fostering a collaborative environment, 
 Here are some snapshots of the **WorkSync** platform's exceptional UI and it's userflow:
 
 ### Uerflow  
-![Userflow](Image/Flow_Chart.jpeg)  
+![Userflow](Images/Flow_Chart.jpeg)  
 *Streamlined navigation ensuring a seamless experience from onboarding to daily use.*  
 
 ### Landing Page  
-![Landing Page](Image/Landing_Page.jpeg)  
+![Landing Page](Images/Landing_Page.jpeg)  
 *Secure and user-friendly login interface for quick access to your workspace.*  
 
 ### Login Page  
-![Login Page](Image/Login_Page.jpeg)  
+![Login Page](Images/Login_Page.jpeg)  
 *Secure and user-friendly login interface for quick access to your workspace.*  
 
 ### Registration Page  
-![Registration Page](Image/Registration.jpeg)  
+![Registration Page](Images/Registration.jpeg)  
 *Efficiently manage tasks, deadlines, and progress in a streamlined interface.*
 
 ### Upload Page  
-![Upload Page](Image/Upload.jpeg)  
+![Upload Page](Images/Upload.jpeg)  
 *Easily upload files and documents to share with your team in real time.*
 
 ### Dashboard  
-![Dashboard](Image/Dashboard.jpeg)  
+![Dashboard](Images/Dashboard.jpeg)  
 *An intuitive hub for tracking projects, tasks, and communication in one place.*
 
 ### Screen Sharing  
