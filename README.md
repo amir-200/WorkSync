@@ -83,6 +83,10 @@ Here are some snapshots of the **WorkSync** platform's exceptional UI and it's u
 [![Showcasing the screen sharing here]](https://youtu.be/yeKvhTcaanU?si=0gjmv7mHOTaivX7-)  
 *Collaborate on documents in real time with live updates.*  
 
+### Upload Page  
+![Group Chat](Image/Chat.jpg)  
+*Collaborate effortlessly with your team through real-time group messaging, enabling dynamic discussions and instant updates.*
+
 ## 🛠️ Installation  
 
 1. **Clone the Repository**:  
